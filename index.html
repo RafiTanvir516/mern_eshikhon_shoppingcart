@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- code css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2c54fe45af.js" crossorigin="anonymous"></script>
+    <title>Cart Item</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="m-5">My shopping cart</h1>
+        </div>
+        <div class="card mb-5">
+            <div class="row">
+                <div class="col align-items-center d-flex">
+                    <div class="card-img"><img src="photos/iPhone-14-Pro-Max.jpg" alt="IphoneImage" class="img-fluid w-25"></div>
+                    <h2 class="card-text">Iphone 15 Pro Max</h2>
+                </div>
+                <div class="col align-items-center d-flex">
+                    <button id="phone-minus" class="btn btn-dark m-2"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" id="phone-number" min="0" value="1">
+                    <button id="phone-plus" class="btn btn-dark m-2"><i class="fa-solid fa-plus"></i>
+                    </button>
+                    
+                    <h3 class="m-2">$ <span id="phonePrice">1099</span></h3>
+                    <button id="close" class="btn btn-danger"><i class="fa-solid fa-x"></i></button>
+                </div>
+            </div>
+        </div>
+            <div class="card mt-5">
+                    <div class="row">
+                    <div class="col align-items-center d-flex">
+                        <div class="card-img"><img src="photos/case.jpeg" alt="caseImage" class="img-fluid w-25"></div>
+                        <h2 class="card-text">Iphone 15 Case</h2>
+                        </div>
+                        <div class="col align-items-center d-flex">
+                        <button id="case-minus" class="btn btn-dark m-2"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" id="case-number" min="0" value="1">
+                        <button id="case-plus" class="btn btn-dark m-2"><i class="fa-solid fa-plus"></i>
+                        </button>
+                        
+                        <h3 class="m-2">$ <span id="casePrice">99</span></h3>
+                        <button id="close" class="btn btn-danger"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                    </div>
+             </div>
+             <div class="card mt-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Subtotal:</h3>
+                        <h3>Tax:</h3>
+                        <h3>Total:</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3>$ <span id="sub-total">1200</span></h3>
+                        <h3>$ <span id="tax">1000</span></h3>
+                        <h3>$ <span id="total-amount">2200</span></h3>
+                    </div>
+                </div>
+             </div>
+             <div class="d-flex justify-content-end">
+                <button class="btn btn-success mt-3">Checkout</button>
+             </div>
+    </div>   
+
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- code js -->
+    <script src="js/index.js"></script>r
+</body>
+</html>
